@@ -1,13 +1,22 @@
 {
-    "name": "wanstiller/joephp",
-    "description": "Un framework PHP rápido y optimizado para SEO.",
+    "name": "joephp/joephp",
+    "description": "Un framework PHP liviano, rápido y optimizado para SEO.",
     "type": "project",
+    "license": "MIT",
     "autoload": {
-      "psr-4": {
-        "JoePHP\\": "app/Core/"
-      }
+        "psr-4": {
+            "JoePHP\\": "app/Core/"
+        }
+    },
+    "bin": ["bin/joe"],
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
-  }
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0"
+    }
+}
+
   

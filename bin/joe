@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+echo "JoePHP CLI\n";
+
+if ($argc < 2) {
+    echo "Comandos disponibles: serve\n";
+    exit;
+}
+
+$command = $argv[1];
+
+switch ($command) {
+    case 'serve':
+        echo "Iniciando servidor en http://localhost:8000\n";
+        system('php -S localhost:8000 -t public');
+        break;
+
+    default:
+        echo "Comando no reconocido: $command\n";
+}
