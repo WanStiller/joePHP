@@ -1,13 +1,13 @@
 {
     "name": "wanstiller/joephp",
-    "description": "Un framework PHP rápido y fácil de aprender",
-    "type": "library",
+    "description": "Un framework PHP rápido y optimizado para SEO.",
+    "type": "project",
     "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        }
+      "psr-4": {
+        "JoePHP\\": "app/Core/"
+      }
     },
-    "require": {
-        "php": ">=8.0"
-    }
-}
+    "minimum-stability": "dev",
+    "prefer-stable": true
+  }
+  
