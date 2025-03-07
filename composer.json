@@ -1,0 +1,13 @@
+{
+    "name": "wanstiller/joephp",
+    "description": "Un framework PHP rápido y fácil de aprender",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    }
+}
